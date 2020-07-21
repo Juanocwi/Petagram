@@ -6,16 +6,24 @@ public class Mascotas {
     private int ivFoto;
     private int ivLike;
     private int ivTLikes;
+    private int like;
 
-    public Mascotas(String tvNombre, String tvLikes, int ivFoto, int ivLike, int ivTLikes) {
-        this.tvNombre = tvNombre;
-        this.tvLikes = tvLikes;
-        this.ivFoto = ivFoto;
-        this.ivLike = ivLike;
+    public Mascotas(int like,String tvNombre, String tvLikes, int ivFoto, int ivLike, int ivTLikes) {
+        this.like       = like;
+        this.tvNombre   = tvNombre;
+        this.tvLikes    = tvLikes;
+        this.ivFoto     = ivFoto;
+        this.ivLike     = ivLike;
         this.ivTLikes = ivTLikes;
     }
 
+    public int getLike() {
+        return like;
+    }
 
+    public void setLike(int like) {
+        this.like = like;
+    }
 
     public String getTvNombre() {
         return tvNombre;

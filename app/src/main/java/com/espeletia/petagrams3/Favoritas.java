@@ -43,11 +43,11 @@ public class Favoritas extends AppCompatActivity {
     public void inicializarListaFavoritas(){
         favoritas = new ArrayList<Mascotas>();
 
-        favoritas.add(new Mascotas("Gigante","1",R.drawable.ic_m3,R.drawable.ic_bone1,R.drawable.ic_bone1));
-        favoritas.add(new Mascotas("Albo","2",R.drawable.ic_m4,R.drawable.ic_bone1,R.drawable.ic_bone1));
-        favoritas.add(new Mascotas("Galleta","8",R.drawable.ic_m5,R.drawable.ic_bone1,R.drawable.ic_bone1));
-        favoritas.add(new Mascotas("Max","4",R.drawable.ic_m6,R.drawable.ic_bone1,R.drawable.ic_bone1));
-        favoritas.add(new Mascotas("Runner","5",R.drawable.ic_m7,R.drawable.ic_bone1,R.drawable.ic_bone1));
+        favoritas.add(new Mascotas(1,"Gigante","1",R.drawable.ic_m3,R.drawable.ic_bone1,R.drawable.ic_bone1));
+        favoritas.add(new Mascotas(1,"Albo","2",R.drawable.ic_m4,R.drawable.ic_bone1,R.drawable.ic_bone1));
+        favoritas.add(new Mascotas(1,"Galleta","8",R.drawable.ic_m5,R.drawable.ic_bone1,R.drawable.ic_bone1));
+        favoritas.add(new Mascotas(1,"Max","4",R.drawable.ic_m6,R.drawable.ic_bone1,R.drawable.ic_bone1));
+        favoritas.add(new Mascotas(1,"Runner","5",R.drawable.ic_m7,R.drawable.ic_bone1,R.drawable.ic_bone1));
 
     }
 }

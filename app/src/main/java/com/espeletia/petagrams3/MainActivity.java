@@ -63,15 +63,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void inicializarListaMascotas(){
         mascotas = new ArrayList<Mascotas>();
-        mascotas.add(new Mascotas("Kaiser","7",R.drawable.ic_m1,R.drawable.ic_bone,R.drawable.ic_bone1));
-        mascotas.add(new Mascotas("Perla","3",R.drawable.ic_m2,R.drawable.ic_bone,R.drawable.ic_bone1));
-        mascotas.add(new Mascotas("Gigante","1",R.drawable.ic_m3,R.drawable.ic_bone,R.drawable.ic_bone1));
-        mascotas.add(new Mascotas("Albo","2",R.drawable.ic_m4,R.drawable.ic_bone,R.drawable.ic_bone1));
-        mascotas.add(new Mascotas("Galleta","8",R.drawable.ic_m5,R.drawable.ic_bone,R.drawable.ic_bone1));
-        mascotas.add(new Mascotas("Max","4",R.drawable.ic_m6,R.drawable.ic_bone,R.drawable.ic_bone1));
-        mascotas.add(new Mascotas("Runner","5",R.drawable.ic_m7,R.drawable.ic_bone,R.drawable.ic_bone1));
-        mascotas.add(new Mascotas("Sasha","6",R.drawable.ic_m8,R.drawable.ic_bone,R.drawable.ic_bone1));
-        mascotas.add(new Mascotas("Maximus","8",R.drawable.ic_m9,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Kaiser","7",R.drawable.ic_m1,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Perla","3",R.drawable.ic_m2,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Gigante","1",R.drawable.ic_m3,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Albo","2",R.drawable.ic_m4,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Galleta","8",R.drawable.ic_m5,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Max","4",R.drawable.ic_m6,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Runner","5",R.drawable.ic_m7,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Sasha","6",R.drawable.ic_m8,R.drawable.ic_bone,R.drawable.ic_bone1));
+        mascotas.add(new Mascotas(0,"Maximus","8",R.drawable.ic_m9,R.drawable.ic_bone,R.drawable.ic_bone1));
 
     }
 }
