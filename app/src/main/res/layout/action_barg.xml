@@ -16,9 +16,8 @@
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.8"
             android:fontFamily="cursive"
             android:gravity="left"
             android:text="@string/app_name"
@@ -28,16 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/bottonF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/ab_boton_marginx"
-            android:layout_marginEnd="@dimen/ab_boton_marginy"
-            android:theme="@style/ButtonNext"
-            android:src="@drawable/fav"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.appcompat.widget.Toolbar>

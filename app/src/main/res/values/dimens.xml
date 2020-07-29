@@ -17,4 +17,13 @@
     <dimen name="fb_marginx">15dp</dimen>
     <dimen name="fb_marginy">30dp</dimen>
 
+    //dimen contacto
+    <dimen name="recuadrosC">320dp</dimen>
+    <dimen name="textosC">25sp</dimen>
+
+    //dimen acerca de
+    <dimen name="acerca">20sp</dimen>
+    <dimen name="textog">22sp</dimen>
+    <dimen name="nombrea">25sp</dimen>
+
 </resources>

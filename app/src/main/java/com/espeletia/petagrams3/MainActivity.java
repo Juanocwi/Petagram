@@ -1,5 +1,6 @@
 package com.espeletia.petagrams3;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -7,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
@@ -54,6 +57,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    // menu opciones
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menuopciones,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.acercade:
+                Intent intent = new Intent(MainActivity.this,acerca_de.class);
+                startActivity(intent);
+                break;
+            case R.id.contacto:
+                Intent intent1 = new Intent(MainActivity.this,contacto.class);
+                startActivity(intent1);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void inicializaAdaptador(){
