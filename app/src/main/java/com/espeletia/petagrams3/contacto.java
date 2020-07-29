@@ -49,9 +49,9 @@ public class contacto extends AppCompatActivity {
         edC2=findViewById(R.id.edC2);
         edC3=findViewById(R.id.edC3);
         btnC4=findViewById(R.id.btnC4);
-        //credenciales de envio correo
-        sEmail="juanocwi@gmail.com";
-        sClave="AntonioJuan13";
+        //credenciales de envio correo (Configurar con el correo de la APP)
+        sEmail="ejemplo@gmail.com";
+        sClave="***********";
 
         btnC4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +86,12 @@ public class contacto extends AppCompatActivity {
                     new SendMail().execute(mensaje);
                 } catch (MessagingException e){
                     e.printStackTrace();
-                    Toast.makeText(getApplicationContext(),"Algo salio Mal con el mensaje",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Algo salio Mal con el mensaje establece el correo y la clave",Toast.LENGTH_SHORT).show();
+                    //Step 1:Turn On less secure
+                    //https://myaccount.google.com/lesssecureapps
+                    //Step 2 :  Allow Display Unlock Captcha
+                    //https://accounts.google.com/DisplayUnlockCaptcha
+
                 }
 
 
