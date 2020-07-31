@@ -12,11 +12,11 @@
         android:roundIcon="@drawable/ic_huella"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".acerca_de"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".contacto"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".menuopciones.acerca_de"
+            android:parentActivityName=".actividades.MainActivity" />
+        <activity android:name=".menuopciones.contacto"
+            android:parentActivityName=".actividades.MainActivity" />
+        <activity android:name=".actividades.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,8 +24,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Favoritas"
-            android:parentActivityName=".MainActivity" />
+            android:name=".actividades.Favoritas"
+            android:parentActivityName=".actividades.MainActivity" />
     </application>
 
 </manifest>

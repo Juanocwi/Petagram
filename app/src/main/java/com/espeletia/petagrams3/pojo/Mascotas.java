@@ -1,4 +1,4 @@
-package com.espeletia.petagrams3;
+package com.espeletia.petagrams3.pojo;
 
 public class Mascotas {
     private String tvNombre;

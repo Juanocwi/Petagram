@@ -1,4 +1,4 @@
-package com.espeletia.petagrams3;
+package com.espeletia.petagrams3.actividades;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +9,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
+
+import com.espeletia.petagrams3.pojo.Mascotas;
+import com.espeletia.petagrams3.R;
+import com.espeletia.petagrams3.adaptadores.FavoritasAdaptador;
+import com.espeletia.petagrams3.menuopciones.acerca_de;
+import com.espeletia.petagrams3.menuopciones.contacto;
 
 import java.util.ArrayList;
 
@@ -48,11 +53,11 @@ public class Favoritas extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.acercade:
-                Intent intent = new Intent(Favoritas.this,acerca_de.class);
+                Intent intent = new Intent(Favoritas.this, acerca_de.class);
                 startActivity(intent);
                 break;
             case R.id.contacto:
-                Intent intent1 = new Intent(Favoritas.this,contacto.class);
+                Intent intent1 = new Intent(Favoritas.this, contacto.class);
                 startActivity(intent1);
                 break;
         }

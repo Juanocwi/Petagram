@@ -26,4 +26,7 @@
     <dimen name="textog">22sp</dimen>
     <dimen name="nombrea">25sp</dimen>
 
+    //dimen perfil
+    <dimen name="image_sizep">120dp</dimen>
+
 </resources>

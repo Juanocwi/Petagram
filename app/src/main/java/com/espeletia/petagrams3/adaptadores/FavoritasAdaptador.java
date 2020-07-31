@@ -1,4 +1,4 @@
-package com.espeletia.petagrams3;
+package com.espeletia.petagrams3.adaptadores;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +9,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.espeletia.petagrams3.pojo.Mascotas;
+import com.espeletia.petagrams3.R;
+
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class FavoritasAdaptador extends RecyclerView.Adapter<FavoritasAdaptador.FavoritasViewHolder>{
     ArrayList<Mascotas> favoritas;

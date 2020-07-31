@@ -1,4 +1,4 @@
-package com.espeletia.petagrams3;
+package com.espeletia.petagrams3.menuopciones;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.espeletia.petagrams3.R;
 
 public class acerca_de extends AppCompatActivity {
 
@@ -34,7 +36,7 @@ public class acerca_de extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.contacto:
-                Intent intent1 = new Intent(acerca_de.this,contacto.class);
+                Intent intent1 = new Intent(acerca_de.this, contacto.class);
                 startActivity(intent1);
                 break;
         }

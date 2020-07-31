@@ -1,4 +1,4 @@
-package com.espeletia.petagrams3;
+package com.espeletia.petagrams3.menuopciones;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,9 +17,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.espeletia.petagrams3.R;
+
 import java.util.Properties;
 
-import javax.mail.Address;
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -49,9 +50,24 @@ public class contacto extends AppCompatActivity {
         edC2=findViewById(R.id.edC2);
         edC3=findViewById(R.id.edC3);
         btnC4=findViewById(R.id.btnC4);
+
+
+
         //credenciales de envio correo (Configurar con el correo de la APP)
         sEmail="ejemplo@gmail.com";
-        sClave="***********";
+        sClave="**************";
+        /*
+        Es necesario desactivar la seguridad de la cuenta de correo en el siguiente link para que
+        se habilite el envio de correos por la API
+        https://myaccount.google.com/lesssecureapps?pli=1
+        Posteriorme es necesario permitir el acceso a la cuenta
+        https://accounts.google.com/b/0/DisplayUnlockCaptcha
+        ya despues de esto permitira utilizar la funcion de envio de correos.
+        */
+
+
+
+
 
         btnC4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,7 +130,7 @@ public class contacto extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.acercade:
-                Intent intent = new Intent(contacto.this,acerca_de.class);
+                Intent intent = new Intent(contacto.this, acerca_de.class);
                 startActivity(intent);
                 break;
             case R.id.contacto:

@@ -24,8 +24,8 @@
     <string name="autor"> Juan Antonio Ocampo Wilches</string>
     <string name="descripcion">Ingeniero de la ciudad de Manizales, Colombia.
         Amante de la programacion y nuevos temas </string>
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

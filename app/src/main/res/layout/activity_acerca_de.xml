@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".acerca_de">
+    tools:context=".menuopciones.acerca_de">
     <include android:id="@+id/acvd"
         layout="@layout/action_barg">
     </include>

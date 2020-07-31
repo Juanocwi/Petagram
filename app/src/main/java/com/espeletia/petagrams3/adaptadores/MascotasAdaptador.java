@@ -1,16 +1,17 @@
-package com.espeletia.petagrams3;
+package com.espeletia.petagrams3.adaptadores;
 
 import android.app.Activity;
-import android.net.sip.SipSession;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.espeletia.petagrams3.pojo.Mascotas;
+import com.espeletia.petagrams3.R;
 
 import java.util.ArrayList;
 
@@ -37,7 +38,7 @@ public class MascotasAdaptador extends RecyclerView.Adapter <MascotasAdaptador.M
         mascotasViewHolder.ivTLike.setImageResource(mascota.getIvTLikes());
         mascotasViewHolder.tvNombre.setText(mascota.getTvNombre());
         mascotasViewHolder.tvLikes.setText(mascota.getTvLikes());
-        //mascotasViewHolder.ivLike.setImageResource(mascota.getIvLike());
+        //acciones al hacer clic en el elemento del cardview cambio de imagen al darle like y suma del total de likes
         mascotasViewHolder.ivLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +69,6 @@ public class MascotasAdaptador extends RecyclerView.Adapter <MascotasAdaptador.M
     public static class MascotasViewHolder extends RecyclerView.ViewHolder{//implements View.OnClickListener
         private ImageView ivFoto, ivLike, ivTLike;
         private TextView  tvNombre,tvLikes;
-        //public ViewHolderClick mlistener;
 
         public MascotasViewHolder(@NonNull View itemView) {//,ViewHolderClick listener
             super(itemView);
@@ -77,26 +77,6 @@ public class MascotasAdaptador extends RecyclerView.Adapter <MascotasAdaptador.M
             ivTLike     = (ImageView) itemView.findViewById(R.id.ivTLike);
             tvNombre    = (TextView)  itemView.findViewById(R.id.tvNombre);
             tvLikes     = (TextView)  itemView.findViewById(R.id.tvLikes);
-
-//            ivFoto.setOnClickListener((View.OnClickListener) this);
-//            ivLike.setOnClickListener((View.OnClickListener) this);
-
         }
-
-//        @Override
-//        public void onClick(View v) {
-//            if (v instanceof ImageView) {
-//                mlistener.onLike((ImageView) v);
-//            } else {
-//                mlistener.onDislike((ImageView) v);
-//            }
-//        }
-//        public static interface ViewHolderClick {
-//            public void onLike(ImageView caller);
-//            public void onDislike(ImageView dcaller);
-//        }
     }
-
-
-
 }
